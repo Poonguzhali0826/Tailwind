@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .button {
+        @apply p-1 font-medium tracking-wide rounded-md shadow-sm lg:px-8;
+    }
+
+    .button--action {
+        @apply bg-indigo-300 text-indigo-800 hover:bg-indigo-200;
+    }
+
+    /* .button--success {
+        @apply bg-green-300 text-green-800 hover:bg-green-200;
+    } */
+    .button--warning {
+        @apply bg-red-300 text-red-800 hover:bg-red-200;
+    }
+
+    .button--close {
+        @apply bg-blue font-serif p-128 text-white text-3xl rounded-4xl ring-pink focus:ring-4 hover:text-green hover:bg-transparent;
+    }
+}
+
+:root {
+    --primary: #5264d4;
+    --paddingLeft: 20px;
+}

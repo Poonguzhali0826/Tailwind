@@ -1,0 +1,100 @@
+<div class="flex justify-center items-center bg-indigo-300 w-100 mx-auto h-screen font-sans">
+  <div class="w-96 p-6 shadow-lg bg-white rounded-md">
+    <h1 class="text-4xl text-center block font-normal">
+      <i class="fa-solid fa-user p-1"></i>Login
+    </h1>
+    <hr class="mt-3">
+
+    <div class="mt-3">
+      <label for="username" class="block text-base mb-2">Username</label>
+      <input type="text" id="username"
+        class="border rounded-lg  w-full text-base px-2 py-2 focus:outline-none focus:ring-0 focus:border-gray-600"
+        placeholder="username" />
+    </div>
+
+    <div class="mt-3">
+      <label for="password" class="block text-base mb-2">Password</label>
+      <input type="text" id="password"
+        class="border rounded-lg  w-full text-base px-2 py-2 focus:outline-none focus:ring-0 focus:border-gray-600"
+        placeholder="password" />
+    </div>
+
+    <div class="mt-3 flex justify-between items-center">
+      <div>
+        <input type="checkbox">
+        <label class="ps-1">Remember Me?</label>
+      </div>
+      <div>
+
+        <a href="#" class="text-blue font-semibold">Forgot Password?</a>
+      </div>
+    </div>
+
+    <div class="mt-5 flex justify-center items-center">
+      <button type="submit" class="button bg-green">Login</button>
+      <button type="submit"
+        class="border-2 border-blue bg-blue text-white py-1 w-full fs-2 rounded-md hover:bg-transparent hover:text-blue  font-semibold">Login</button>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="w-1/2 mx-auto flex items-end  space-x-2 ">
+  <div class="h-96 bg-blue p-3 m-3">h-96</div>
+  <div class="h-80 bg-blue p-3 m-3">h-80</div>
+  <div class="h-64 bg-blue p-3 m-3">h-64</div>
+  <div class="h-48 bg-blue p-3 m-3">h-48</div>
+  <div class="h-40 bg-blue p-3 m-3">h-40</div>
+  <div class="h-32 bg-blue p-3 m-3">h-32</div>
+  <div class="h-24 bg-blue p-3 m-3">h-24</div>
+</div>
+
+<div class="p-1 w-1/2 hover:w-auto bg-red-500 m-6">
+  Hello Tailwind
+</div>
+
+<div class="w-1/2 mx-auto m-52">
+  <form>
+    <label class="block">
+      <span class="block text-sm font-medium text-slate-700">Username</span>
+      <!-- Using form state modifiers, the classes can be identical for every input -->
+      <input type="text" value="tbone" disabled class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+        focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+        disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+       
+      " />
+    </label>
+
+    <label class="block">
+      <span class="block text-sm font-medium text-slate-700">Email</span>
+      <!-- Using form state modifiers, the classes can be identical for every input -->
+      <input type="text" value="test@gmail.com" disabled class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+        focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+        invalid:border-pink-500 invalid:text-pink-600
+        focus:invalid:border-pink-500 focus:invalid:ring-pink-500
+      " />
+    </label>
+    <!-- ... -->
+  </form>
+</div>
+<div class="w-1/2 mx-auto">
+  <div class="{{ error ? 'text-orange' : 'text-green' }}"> Error Message</div>
+
+  <div class="bg-[color:var(--primary)] p-[var(--paddingLeft)]">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, tempora provident. Numquam libero totam rerum
+    vitae dolores debitis nemo quae aliquid vel obcaecati? Nesciunt cumque architecto eius, dolorum distinctio
+    consectetur?
+  </div>
+</div>
+
+<div class="w-1/2 mx-auto m-4 ">
+  <button type="submit" class="button--close">
+    close
+  </button>
+</div>
+
+
+
+<div class="text-3xl font-semibold bg-red-600 font-sans p-128">Tailwind</div>
+<router-outlet></router-outlet>
